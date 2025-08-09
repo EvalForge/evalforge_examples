@@ -1,0 +1,16 @@
+id: digits_only_suite
+dataset_id: auto
+prompt_id: auto
+model_provider: gpt
+provider_params:
+  model: gpt-4o-mini
+  temperature: 0
+  max_tokens: 32
+metrics:
+  - json_field_exact
+  - exact_match
+  - latency
+guards:
+  - banned_phrase
+params: {}
+metric_params: {}
